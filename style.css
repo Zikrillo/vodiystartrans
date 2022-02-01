@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 html {
     scroll-behavior: smooth;
@@ -12,6 +14,17 @@ body{
     margin: 0px;
     
 }
+.price_section{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    overflow-x: auto;
+    flex-direction: column;
+}
+
 .bdb{
     overflow: hidden;
 }
@@ -184,7 +197,7 @@ body{
 .footer img{
     width: 30px;
 }
-.row11 input{
+ input{
     background: none;
     border-style: solid;
     border-radius: 5px;
@@ -193,11 +206,10 @@ body{
     color: white;
     margin-right: 15px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 27px;
-    
+    font-size: 12px;
     width: 100%;
 }
-.row11 button{
+button{
     font-family: 'Montserrat', sans-serif;
     background: none;
     border-style: solid;
@@ -207,12 +219,32 @@ body{
     color: white;
     font-size: 15px;
     padding-left: 10px;
-    padding-right: 10px;
-    
-
+    padding-right: 10px;   
+}
+.form_section  input{
+    background: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FE9004;
+    height: 50px; 
+    color: white;
+    margin-right: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 45%;
+    margin-bottom: 10px;
+}
+.form_section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+.form_section span{
+    display: block;
+    margin-bottom: 20px;
     
 }
-@media(max-width: 900px){
+@media(max-width: 1000px){
     .burgericon{
         display: block;
     }
@@ -301,7 +333,19 @@ body{
     .row11{
         padding: 0px;
     }
-    
+    .form_section{
+        display: block;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .form_section  input{
+        width: 90%;
+        margin-right: 0px;
+        padding: 0%;
+    }
 }
 @media(min-width: 1600px){
     .back{
